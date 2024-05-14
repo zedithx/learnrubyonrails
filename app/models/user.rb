@@ -7,4 +7,5 @@
 class User < ApplicationRecord
     # adds security and authentication, bcrypt + verify
     has_secure_password
+    validates :email, presence: true
 end
